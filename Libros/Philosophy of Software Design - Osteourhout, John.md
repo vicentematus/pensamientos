@@ -103,6 +103,73 @@
 - Red flag: hard to pick name: If it's hard to find a simple name for a variable or method, that's a hint that the underlying object may not have a clean design.
 	- Perhaps you are trying to use a single variable to represent several things.
 
+
+
+
+
+
+Chapter 17
+-  ¿Cuáles son formas de generar consistencia en un proyecto de software? Respuesta. Definiendo estilos de código. Cómo nombrar las variables. Cómo definir las funciones. Qué paradigma usar.
+- Cuando veas código que tiene cierta estructura como nombramiento de variables en camel case, ¿qué deberías hacer? En respuesta, seguir, lo más probable es que ya haya una convención definida por lo que hay que seguir usándola. No reinventes convenciones en caso de que no existan y cosas así. 
+- Q:Hay una frase que dice: "When in Rome, ___________"
+  A: do as the Romans do.
+-  Q, dos puntos. A veces es mejor mantener las convenciones existentes a pesar de que pueden haber mejoras, ya que el esfuerzo y la energía requerida para cambiar una convención es más grande y el hecho de mantener una.
+
+
+
+### Chapter 18: Code Should be Obvious
+-   Code should be obvious. Debería leerse y entenderse de una vez.
+-  Cuando hay obscuridad, es difícil entender lo que está pasando dentro de un módulo. Por eso se tienen que usar el naming de variables consistentes o que sean autoexplicativos. Y también debe haber una consistencia dentro de los módulos de esta mañana.
+
+Q: Red Flag ¿Cuáles son las cosas que hacen que el código sea menos obvio?
+A:  Cuando el funcionamiento del módulo no se puede entender leyendolo. Eso significa que lo más probable es que haya información importante que se está omitiendo
+
+
+ Things that make code less obvious. Por ejemplo, en los casos de Event Driven Programming, cuando se emite un evento y el receptor de este lo recibe, a veces uno se pierde en el control flow de lo que está pasando de un evento y qué pasa cuando uno lo recibe. Los comentarios pueden ayudar.
+
+
+Q: Software should be designed for ease of reading, not ease of '_'
+A: Writing. 
+
+
+ Q, dos puntos. Why are generic containers or hash maps or pairs in Java or C++? Why those type of containers make the code less obvious?|
+ Porque es difícil de leerlo. En segundo lugar, necesitas entender qué es la clave de este par genérico. Y en segundo lugar, necesitas saber cuál es la parte valor de la clave-valor. Tienes que hacer un esfuerzo adicional para entender cuál es el tipo de este contenedor.
+
+
+Q:  Why using different types for declaration and allocation make code less obvious?
+A: Because it confuses the reader trying to understand what type the variable is, but the definition says another thing. For example, if you have a variable that has the name of peopleList, and when you read this,  you expect it to be an array, but the problem is when the variable in reality is an object. 
+
+
+Q: In the conclusion of the "Code should be obvious chapter"." What does the author says about trying to make code more obvious?
+A: You must ensure that the readers always have the information they need to understand it.
+
+Q: What should you when you encounter a proposal for a new software development paradigm?
+A: Challenge it from the standpoint of complexity: does the proposal really help to minimize complexity in large software systems?
+
+
+### Chapter 20: Designing for performance
+
+ Q. Dos puntos. Si estás diseñando para rendimiento o cuando necesitas optimizarlo, ¿qué deberías hacer? A. Dos puntos. Encuentra las rutas críticas que son más importantes para el rendimiento y hazlas lo más simples posible. Q.
+
+
+### 21, Decide What Matters
+Q: How to decide what matters?
+A:Looking for leverage — where one solution to one problem also allows many other problems to be solved.
+
+Q:  How to determine what is more important? 
+A: It's easier to determine what is more important if you have multiple options to choose among.
+
+Q: When you don't have much experience designing the best system, what should you do?
+A: Start by making a hypothesis, then commit to it, build the system under that assumption, and see how it works out. If it turns out fine, then it was a good design and a good hypothesis. If it turns bad, then you learn from experience.
+
+ A:How to minimize what doesnt matters? 
+ Try to make as little that matters as possible. Minimize the number of parameters, the number of configurations, and so on.
+
+
+ Q: How to emphasize things that matter? 
+ A: Emphasize them in the design. For example, important things should appear in places where they are more likely to be seen, such as interfaces, documentation, names, and so on..
+
+Software is all about complexity
 ## Questions
 
 
@@ -122,7 +189,7 @@ Q: What is the ideal amount of investment:
 A: In bits and pieces (10-20% of your time)
 
 Q: What it's gonna happen when you invest time designing?
-A:In the beginning you will slow
+A:In the beginning you will slow down, but in the long run you will speed up.
 
 
 Q: What is the definition of a module in the book?
@@ -167,6 +234,8 @@ A: deep module because they hide the overall complexity.
 
 
 MISSING NOTES 
+
+
 
 
  
