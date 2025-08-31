@@ -34,3 +34,94 @@ Es un objeto que reemplaza una dependencia real en un test. Básicamente es una 
 
 ¿Por qué un test double?
 Para realmente testear algo en aislamiento, si una clase tiene una dependencia de otra o múltiples, es necesario reemplazar estas con test doubles.
+
+## Notes del video
+
+https://youtu.be/k_ItB5btREU
+
+
+What is a structural inspection?
+It's when you test the implementation details.
+
+![](Libros/Pasted%20image%2020250828004154.png)
+
+Why is this test a bad example of testing?
+Because it's testing the structural part of the code.
+
+
+What is a test should focus?
+ A good test should bind to the end result, not implementation details.
+
+The idea of a test is to verify the end result, not implementation details.kkA
+
+![](Libros/Pasted%20image%2020250828004738.png)
+t. 16:20
+
+
+
+![](Libros/Pasted%20image%2020250828005824.png)
+t.23:55
+
+![](Libros/Pasted%20image%2020250828005931.png)
+t. https://youtu.be/k_ItB5btREU?t=1482
+
+![](Libros/Pasted%20image%2020250828010040.png)
+
+![](Libros/Pasted%20image%2020250828010205.png)
+
+
+![](Libros/Pasted%20image%2020250828010323.png)
+
+
+Effective unit test is tightly coupled to production code.
+
+
+![](Libros/Pasted%20image%2020250828010817.png)
+https://youtu.be/k_ItB5btREU?t=1945
+
+
+
+![](Libros/Pasted%20image%2020250828011305.png)
+
+
+
+
+
+![](Libros/Pasted%20image%2020250829002720.png)
+pregunta ¿Qué es un Humble Object Pattern? Un Humble Object Pattern es una forma es un patrón que separa el código un poco difícil de testear a una clase distinta separada en otro módulo separada en otro módulo 
+
+![](Libros/Pasted%20image%2020250829002706.png)
+
+
+
+   When you have overcomplicated code, you should split it into controller or domain model algorithms.
+
+Cuando tienes partes en el código que son difíciles de testear, trata de mover lo más posible de la lógica a un módulo aparte, para así poder testear más fácilmente.
+
+En programación, ¿cuál es un ejemplo de implementación de Humble Object Pattern? En frameworks como Ruby on Rails o .NET.
+Model View Controller. El Model se encarga de la lógica, View es el Hard to Test Dependency y el Controller es el Humble Object.
+
+
+
+### When to mock
+
+¿Qué es un móc?
+
+Why use mocks
+To remove external dependencies when testing.
+
+
+Me falta entender acá
+
+In testing, the objective of mocks is to maintain backwards compatibility.
+
+
+What type of dependencies should be replaced by Mocks?
+Only unmanaged dependencies should be replaced by mocks.
+
+
+Why using AI is a bad option to write tests?
+Because AI doesn't understand the business logic the way a human does. It can't reliably differentiate what is important for the business and what is not.
+
+In testing, it doesn't matter. To test the code per se, what matters is testing units of behavior. The observable part of the code is what matters.
+
