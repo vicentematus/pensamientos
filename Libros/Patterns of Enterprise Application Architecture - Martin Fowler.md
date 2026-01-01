@@ -74,14 +74,14 @@ Recomendado por David Heinemeier Hanson (DHH) en [The five programming books tha
 - [Transaction Script](https://martinfowler.com/eaaCatalog/transactionScript.html)
 	- La logica de negocios esta en una función[^1]
 		- . Cómo un servicio que hace las siguientes operaciones: find() , create(), get_all_users(),
-	-  ![](Libros/Pasted%20image%2020240919160718.png)
+	-  ![](Libros/unit-testing-principles/Pasted%20image%2020240919160718.png)
 - [Domain Model](https://martinfowler.com/eaaCatalog/domainModel.html)
 	- En vez de que una función maneje toda la lógica, se crea un objeto único que la encapsule.
 		- Por ejemplo en el ejemplo que menciona de a way of calculating revenue recognitions, se encapsula la lógica en un Dominio especifico. Existe un `Contract` , un `Product`, una `Recognition Strategy` , y un `Revenue Recognition`
-		- ![](Libros/Pasted%20image%2020240919162345.png)
+		- ![](Libros/unit-testing-principles/Pasted%20image%2020240919162345.png)
 - [Table Module](https://martinfowler.com/eaaCatalog/tableModule.html)
 	- Es el punto intermedio entre Transaction Script y Domain Model. Tiene distintas funciones (insert, getProductById) y también trabaja con  Domains (`Contract`, `Product`) 
-	- ![](Libros/Pasted%20image%2020240919162649.png)
+	- ![](Libros/unit-testing-principles/Pasted%20image%2020240919162649.png)
 	-  Idealmente funciona bien con un  [Record Set](https://martinfowler.com/eaaCatalog/recordSet.html)
 		- Record Set: representa los datos que se obtienen después de una consulta a una base de datos. Cómo `class RecordSet { constructor(records), getAllRecord()}` y después puedes estos datos en otra parte de la aplicación cómo `RecordSet.getAllRecords()`. 
 	- .NET y Microsoft utilizan este patrón.
@@ -106,7 +106,7 @@ Recomendado por David Heinemeier Hanson (DHH) en [The five programming books tha
 	       }
 	  }
 	  ```
-	- ![](Libros/Pasted%20image%2020240919181540.png)
+	- ![](Libros/unit-testing-principles/Pasted%20image%2020240919181540.png)
 	- 
 
 	
