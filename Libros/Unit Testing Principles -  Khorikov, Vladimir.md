@@ -35,6 +35,60 @@ Es un objeto que reemplaza una dependencia real en un test. Básicamente es una 
 ¿Por qué un test double?
 Para realmente testear algo en aislamiento, si una clase tiene una dependencia de otra o múltiples, es necesario reemplazar estas con test doubles.
 
+¿Que es una shared dependency?
+Es una dependencia que se comparte en distintos tests. Un cambio en esa dependencia afecta a las demás.
+
+¿Que es una private dependency?
+Es una dependencia que no se comparte entre tests.
+
+¿Que es una out-of-process dependency?
+Es una dependencia que corre out-of-process; que no esta en memoria. Por ejemplo Levantar un docker  con una DB antes de correr los tests.
+
+
+
+## Differences between Classical and London schools of unit testing
+
+
+Q: ¿Cuál es la diferencia fundamental entre The London School y The Classical School?
+ A:  El componente de isolation/aislamiento en los tests.
+
+
+
+Q: Overall, the disagreement between the schools spans three major topics:  
+1.  The ---- requirement  
+2. What constitutes a piece of code under test (a unit)  
+3. Handling dependencies
+A: Isolation
+
+
+
+Q: Rellena la tabla con las diferencias entre London School y Classical School
+![](Libros/Screenshot%202025-09-27%20at%203.31.33%20PM.png)
+A:   ![](Libros/Pasted%20image%2020250927153051.png)
+
+
+Q: Que school of thought prefiere el autor del libro: The London School or The Classical School?
+A: The Classical School
+
+
+Q: Por que el autor tiene de preferencia una School (The London School o The Classical School) sobre el otro?
+A: The reason is fragility. Tests that use mocks then to be more fragile.
+
+
+Q: Según el libro, que es units of behavior?
+A: something that is meaningful for the problem domain, or a business person
+
+Q: Que deberian verificar los tests?
+A: Tests shouldn’t verify units of code. Rather, they should verify units of  
+behavior.
+
+Q: Cuantas clases deberían usar los tests?
+A: No importa la cantidad de clases. El objetivo es que verifiques una Unit of Behaviour.
+
+Q: ¿Cual es la analogia de contar una historia con un test?
+A: Un test deberia contar una historia sobre un problema que tu código ayuda a resolver, y esta historia debería tener sentido e importancia para una business person.
+
+
 ## Notes del video
 
 https://youtu.be/k_ItB5btREU
@@ -43,7 +97,7 @@ https://youtu.be/k_ItB5btREU
 What is a structural inspection?
 It's when you test the implementation details.
 
-![](Libros/Pasted%20image%2020250828004154.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828004154.png)
 
 Why is this test a bad example of testing?
 Because it's testing the structural part of the code.
@@ -54,43 +108,43 @@ What is a test should focus?
 
 The idea of a test is to verify the end result, not implementation details.kkA
 
-![](Libros/Pasted%20image%2020250828004738.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828004738.png)
 t. 16:20
 
 
 
-![](Libros/Pasted%20image%2020250828005824.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828005824.png)
 t.23:55
 
-![](Libros/Pasted%20image%2020250828005931.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828005931.png)
 t. https://youtu.be/k_ItB5btREU?t=1482
 
-![](Libros/Pasted%20image%2020250828010040.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828010040.png)
 
-![](Libros/Pasted%20image%2020250828010205.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828010205.png)
 
 
-![](Libros/Pasted%20image%2020250828010323.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828010323.png)
 
 
 Effective unit test is tightly coupled to production code.
 
 
-![](Libros/Pasted%20image%2020250828010817.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828010817.png)
 https://youtu.be/k_ItB5btREU?t=1945
 
 
 
-![](Libros/Pasted%20image%2020250828011305.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250828011305.png)
 
 
 
 
 
-![](Libros/Pasted%20image%2020250829002720.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250829002720.png)
 pregunta ¿Qué es un Humble Object Pattern? Un Humble Object Pattern es una forma es un patrón que separa el código un poco difícil de testear a una clase distinta separada en otro módulo separada en otro módulo 
 
-![](Libros/Pasted%20image%2020250829002706.png)
+![](Libros/unit-testing-principles/Pasted%20image%2020250829002706.png)
 
 
 
@@ -124,4 +178,65 @@ Why using AI is a bad option to write tests?
 Because AI doesn't understand the business logic the way a human does. It can't reliably differentiate what is important for the business and what is not.
 
 In testing, it doesn't matter. To test the code per se, what matters is testing units of behavior. The observable part of the code is what matters.
+
+
+
+# Chapter 3
+
+Q: Q: Cómo deberias nombrar tus tests?
+A: Como si le estuvieras describiendo un escenario a un no-programador, o alguien que no es familiar con la programación.
+
+
+Q: Why using the wording 'should be' is an anti-pattern?
+A: Because a test is a single, atomic fact about a unit of behaviour. There's no place for a wish (should be) when deciding a fact
+
+Q: Is this a good or bad name for a test?public void Delivery_with_past_date_should_be_invalid()
+A: bad test. Because a test is a fact. It's not a wish.
+
+
+
+## Chapter 4
+Q: What problem can cause bad implemented tests?
+A: Los developers no confian en ellos.
+
+
+Q: Que pasa cuando un test esta muy acoplado con los implementation details?
+A: Genera falsos positivos.
+
+Q: When a test is coupled to its implementation details, every refactor makes the test ----?
+A: *fail*
+
+Q: Tests that couple to the SUT’s implementation details ----- to refactoring
+A: are not resistant
+
+Q: Que es SUT?
+A: System under Test.
+
+Q: Cual es una analogia para estructurar un test según el libro?
+A: Como si estuvieras contando una historia.
+
+
+Q: What should you aim when creating a test?
+A: To the end result.
+
+Q: What are ways to avoid brittleness in tests?
+A: By not focusing on implementation details of the code. Just the final result.
+
+
+Q: What this diagram represents:
+![](Libros/Pasted%20image%2020251005202005.png)
+A: The diagram on the left represents when a SUT is observing the observable behaviour. The diagram on the RIGHT is tied to implementations details.
+
+
+Q: Rellena la informacion faltante: ![](Libros/Screenshot%202025-10-05%20at%208.26.45%20PM.png)
+A: ![](Libros/Pasted%20image%2020251005202803.png)
+
+
+Q: Rellena el diagrama de  protection agsint regressions and resistance to refactoring![](Libros/Screenshot%202025-10-05%20at%208.35.49%20PM.png)
+
+A: ![](Libros/Pasted%20image%2020251005202937.png)
+
+
+Q: A test is more accurate when one of the following is predominant: (signal: number of bugs found, noise: number of false alarms raised)
+A: when it generates a strong signal of numbers bugs found.
 
