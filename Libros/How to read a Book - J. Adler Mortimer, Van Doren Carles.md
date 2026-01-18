@@ -31,20 +31,20 @@ A: problems
 Q: |Tu deber como lector para descubrir la intención del autor es...
 Deberías Identificar cuáles son las preguntas principales del libro y responderlas.
 
-¿Qué tipo de es Intentional Falacy?
+Q: ¿Qué tipo de es Intentional Falacy?
 Es tratar de responder los temas principales de un libro con obras previas del autor.
 
-¿Cuál es un ejemplo de Intentional Fallacy?
+Q: ¿Cuál es un ejemplo de Intentional Fallacy?
 Cuando se trata de leer la obra de Shakespeare pero se le analiza desde un punto de vista de su obra Hamlet.
 
-¿Cuáles son un listado de preguntas que te puedes hacer para descubrir la intención del autor?
-¿Qué tipo de problema es?
+Q: ¿Cuáles son un listado de preguntas que te puedes hacer para descubrir la intención del autor?
+A:¿Qué tipo de problema es?
 ¿Cuál es el propósito de este problema?
 ¿Con qué se relaciona con otros conceptos del libro?
 
 La quinta regla del libro menciona encuentra las palabras más importantes y a través de ellas llega a términos con el autor
 
-El autor, ¿qué obstáculos tiene para hacer entender al lector?
+Q: Qué obstáculos tiene para hacer entender al lector?
 La barrera del lenguaje y su libre interpretación.
 
 Como lector, ¿cómo podemos llegar a término con el autor?
@@ -84,21 +84,21 @@ El objetivo del capítulo es llegar a términos como el autor y entender lo que 
 
 Capítulo 9. Determinando la intención de un autor.
 
-En el contexto del libro, ¿qué es una proposición? Respuesta es una expresión del autor, es una opinión de un autor sobre algo.
+Q: En el contexto del libro, ¿qué es una proposición? Respuesta es una expresión del autor, es una opinión de un autor sobre algo.
 
-¿Cuál es la analogía de la gente de ventas con leer?
+Q: ¿Cuál es la analogía de la gente de ventas con leer?
 La gente de ventas llega a términos cuando tiene la proposición del negocio , mientras que el lector tiene que llegar a términos con el autor entendiendo los significados primero, antes de descubrir qué es lo que está proponiendo.
 
-¿De qué se compone gramaticalmente un libro?
+Q: ¿De qué se compone gramaticalmente un libro?
 de palabras párrafos
 
-¿Cuál es la unidad más pequeña en un libro?
+Q: ¿Cuál es la unidad más pequeña en un libro?
 Una palabra.
 
-Cuando uno va leyendo, ¿en qué forma lineal se van ordenando las unidades?
+Q: Cuando uno va leyendo, ¿en qué forma lineal se van ordenando las unidades?
 De la unidad más simple a las más complejas.
 
-Según el libro, un lector activo que es atento. ¿Qué debería estar haciendo con estas unidades?
+Q: Según el libro, un lector activo que es atento. ¿Qué debería estar haciendo con estas unidades?
 Debería estar atento a las palabras y también a los párrafos. Es una mezcla entre entender la unidad más simple a la que abarca más.
 
 ---
@@ -122,5 +122,29 @@ A: Discover the propositions they contain
 
 Q: Rule 7: Locate orConstruct the basic arguments in the book by finding them in the connection of sentences
 
-Q: From the author's POV the key sentnces lies on the **\_** he is making.
+Q: From the author's POV the key sentences lies on the **\_** he is making.
 A: Major affirmations and denials he is making
+
+
+Q: From the author's pov, the important sentences lies:
+A: Major affirmations and denials he is making
+
+
+Q: Give examples of books where leading propositions are set forth in sentences?
+A: Euclid Elements , Summa Theologica
+
+
+Q: How essential is to be confused/perplexed when reading?
+A: Important. That's when you identify that there is a gap in knowledge
+
+Q: What action proactively should you be doing when reading?
+A: Asking questions about the meaning of things.
+
+Q: When you read for understanding you are?
+A: Finding the intentions of the author
+
+Q: What propositions means?
+A: What a sentence means.
+
+Q: You came to terms by > Knowing the meaning of words in certain context
+You discover propositions by -> Interpreting all the words that make up a sentence
